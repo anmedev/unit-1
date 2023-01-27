@@ -23,9 +23,9 @@ print(caught_only_by_first(["lightning bug", "caterpillar", "ladybug", "lightnin
 print(caught_only_by_first(["stag beetle", "earwig", "millipede", "pill bug", "june bug", "lightning bug", "dragonfly"], ["lightning bug", "caterpillar", "ladybug", "lightning bug", "ladybug", "monarch butterfly", "june bug", "carpenter ant"]))
 
 # Sets and Tuples - id: e7a154a4-1f4d-4c2c-bb04-b88d978f3aba
-def caught_only_by_first(first_list, second_list):
+def caught_by_both(first_list, second_list):
   first_list_set = set(first_list)
   second_list_set = set(second_list)
   return first_list_set & second_list_set
 print(caught_only_by_first(["lightning bug", "caterpillar", "ladybug", "lightning bug", "ladybug", "monarch butterfly", "june bug", "carpenter ant"], ["stag beetle", "earwig", "millipede", "pill bug", "june bug", "lightning bug", "dragonfly"]))
-print(caught_only_by_first(["stag beetle", "earwig", "millipede", "pill bug", "june bug", "lightning bug", "dragonfly"], ["lightning bug", "caterpillar", "ladybug", "lightning bug", "ladybug", "monarch butterfly", "june bug", "carpenter ant"]))
+print(caught_by_both(["stag beetle", "earwig", "millipede", "pill bug", "june bug", "lightning bug", "dragonfly"], ["lightning bug", "caterpillar", "ladybug", "lightning bug", "ladybug", "monarch butterfly", "june bug", "carpenter ant"]))

@@ -27,5 +27,13 @@ def caught_by_both(first_list, second_list):
   first_list_set = set(first_list)
   second_list_set = set(second_list)
   return first_list_set & second_list_set
-print(caught_only_by_first(["lightning bug", "caterpillar", "ladybug", "lightning bug", "ladybug", "monarch butterfly", "june bug", "carpenter ant"], ["stag beetle", "earwig", "millipede", "pill bug", "june bug", "lightning bug", "dragonfly"]))
+print(caught_by_both(["lightning bug", "caterpillar", "ladybug", "lightning bug", "ladybug", "monarch butterfly", "june bug", "carpenter ant"], ["stag beetle", "earwig", "millipede", "pill bug", "june bug", "lightning bug", "dragonfly"]))
 print(caught_by_both(["stag beetle", "earwig", "millipede", "pill bug", "june bug", "lightning bug", "dragonfly"], ["lightning bug", "caterpillar", "ladybug", "lightning bug", "ladybug", "monarch butterfly", "june bug", "carpenter ant"]))
+
+# Sets and Tuples - id: c43f2ad4-b5b4-428b-8899-438decd86d2f
+def caught_together(first_list, second_list):
+  first_list_set = set(first_list)
+  second_list_set = set(second_list)
+  return first_list_set | second_list_set
+print(caught_together(["lightning bug", "caterpillar", "ladybug", "lightning bug", "ladybug", "monarch butterfly", "june bug", "carpenter ant"], ["stag beetle", "earwig", "millipede", "pill bug", "june bug", "lightning bug", "dragonfly"]))
+print(caught_together(["stag beetle", "earwig", "millipede", "pill bug", "june bug", "lightning bug", "dragonfly"], ["lightning bug", "caterpillar", "ladybug", "lightning bug", "ladybug", "monarch butterfly", "june bug", "carpenter ant"]))

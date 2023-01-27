@@ -45,3 +45,22 @@ def left_to_catch(bug_list, journal_bugs_list):
   return journal_bugs_set - bug_list_set
 print(left_to_catch(["lightning bug", "caterpillar", "ladybug", "lightning bug", "ladybug", "monarch butterfly", "june bug", "carpenter ant"], ["pill bug", "damselfly", "stag beetle", "ladybug", "honey bee", "monarch butterfly", "moth", "caterpillar", "earwig", "lightning bug", "dragonfly", "stag beetle", "millipede", "june bug", "carpenter ant"]))
 print(left_to_catch(["stag beetle", "earwig", "millipede", "pill bug", "june bug", "lightning bug", "dragonfly"], ["pill bug", "damselfly", "stag beetle", "ladybug", "honey bee", "monarch butterfly", "moth", "caterpillar", "earwig", "lightning bug", "dragonfly", "stag beetle", "millipede", "june bug", "carpenter ant"]))
+
+# Sets and Tuples - id: 8847d1ad-0ce1-43db-aa82-33f9f744aecb
+def is_known_sequence(sequence, known_sequences):
+  sequence = tuple(sequence)
+  if sequence in known_sequences:
+    return True
+  return False
+print(is_known_sequence([1, 1, 2, 3, 5, 8, 13, 21], {
+    (1, 2, 3, 4, 5, 6, 7, 8),
+    (2, 4, 6, 8, 10, 12, 14, 16),
+    (1, 1, 2, 3, 5, 8, 13, 21),
+    (1, 3, 6, 10, 15, 21, 28, 36),
+}))
+print(is_known_sequence([2, 3, 5, 7, 11, 13, 17, 19], {
+    (1, 2, 3, 4, 5, 6, 7, 8),
+    (2, 4, 6, 8, 10, 12, 14, 16),
+    (1, 1, 2, 3, 5, 8, 13, 21),
+    (1, 3, 6, 10, 15, 21, 28, 36),
+}))

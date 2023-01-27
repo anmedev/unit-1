@@ -4,7 +4,12 @@ def shopping_list(bruschetta, pesto_pasta, salsa):
   pesto_pasta_set = set(pesto_pasta)
   salsa_set = set(salsa)
   final_set = bruschetta_set | pesto_pasta_set | salsa_set
-  final_set_list = list(final_set)
-  return final_set_list
+  return list(final_set)
 print(shopping_list(["bread", "olive oil", "garlic", "tomato", "basil", "balsamic vinegar", "salt"], ["pasta", "olive oil", "garlic", "basil", "parmesan", "pine nuts"], ["tomato", "onion", "garlic", "salt", "green onion", "cilantro", "jalapeno"]))
 print(shopping_list([1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12]))
+
+# Sets and Tuples - id: # Sets and Tuples - id: 5e945f7a-fa92-423e-8b55-6a1dd2b22f87
+def make_insect_dex(bug_list):
+  return set(bug_list)
+print(make_insect_dex(["lightning bug", "caterpillar", "ladybug", "lightning bug", "ladybug", "monarch butterfly", "june bug", "carpenter ant"]))
+print(make_insect_dex(["stag beetle", "earwig", "millipede", "pill bug", "june bug", "lightning bug", "dragonfly"]))

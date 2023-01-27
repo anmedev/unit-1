@@ -13,3 +13,11 @@ def make_insect_dex(bug_list):
   return set(bug_list)
 print(make_insect_dex(["lightning bug", "caterpillar", "ladybug", "lightning bug", "ladybug", "monarch butterfly", "june bug", "carpenter ant"]))
 print(make_insect_dex(["stag beetle", "earwig", "millipede", "pill bug", "june bug", "lightning bug", "dragonfly"]))
+
+# Sets and Tuples - id: 1df7dc4e-7858-470b-83c5-7e619a31cb18
+def caught_only_by_first(first_list, second_list):
+  first_list_set = set(first_list)
+  second_list_set = set(second_list)
+  return first_list_set - second_list_set
+print(caught_only_by_first(["lightning bug", "caterpillar", "ladybug", "lightning bug", "ladybug", "monarch butterfly", "june bug", "carpenter ant"], ["stag beetle", "earwig", "millipede", "pill bug", "june bug", "lightning bug", "dragonfly"]))
+print(caught_only_by_first(["stag beetle", "earwig", "millipede", "pill bug", "june bug", "lightning bug", "dragonfly"], ["lightning bug", "caterpillar", "ladybug", "lightning bug", "ladybug", "monarch butterfly", "june bug", "carpenter ant"]))

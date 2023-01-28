@@ -8,7 +8,7 @@ def shopping_list(bruschetta, pesto_pasta, salsa):
 print(shopping_list(["bread", "olive oil", "garlic", "tomato", "basil", "balsamic vinegar", "salt"], ["pasta", "olive oil", "garlic", "basil", "parmesan", "pine nuts"], ["tomato", "onion", "garlic", "salt", "green onion", "cilantro", "jalapeno"]))
 print(shopping_list([1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12]))
 
-# Sets and Tuples - id: # Sets and Tuples - id: 5e945f7a-fa92-423e-8b55-6a1dd2b22f87
+# Sets and Tuples - id: 5e945f7a-fa92-423e-8b55-6a1dd2b22f87
 def make_insect_dex(bug_list):
   return set(bug_list)
 print(make_insect_dex(["lightning bug", "caterpillar", "ladybug", "lightning bug", "ladybug", "monarch butterfly", "june bug", "carpenter ant"]))
@@ -74,3 +74,12 @@ print(get_first_and_last([1, 1, 2, 3, 5, 8, 13, 21]))
 print(get_first_and_last([2, 4, 6, 8, 10, 12, 14, 16]))
 print(get_first_and_last([2, 3, 5, 7, 11, 13, 17, 19]))
 print(get_first_and_last([1, 3, 6, 10, 15, 21, 28, 36]))
+
+# Sets and Tuples - id: 2a510580-ed13-4150-b591-0619d4b0ab74
+def store_product_of_pairs(product_table, first, last):
+  product_table[first, last] = first * last
+  return first * last
+print(store_product_of_pairs({}, 1, 21))
+print(store_product_of_pairs({}, 2, 16))
+print(store_product_of_pairs({}, 2, 19))
+print(store_product_of_pairs({}, 1, 36))

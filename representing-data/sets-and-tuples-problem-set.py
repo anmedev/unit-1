@@ -64,3 +64,13 @@ print(is_known_sequence([2, 3, 5, 7, 11, 13, 17, 19], {
     (1, 1, 2, 3, 5, 8, 13, 21),
     (1, 3, 6, 10, 15, 21, 28, 36),
 }))
+
+# Sets and Tuples - id:  76b680cf-c278-44ca-bdda-146c3c3866ea
+def get_first_and_last(sequence):
+  first = sequence[0]
+  last = sequence[-1]
+  return first, last
+print(get_first_and_last([1, 1, 2, 3, 5, 8, 13, 21]))
+print(get_first_and_last([2, 4, 6, 8, 10, 12, 14, 16]))
+print(get_first_and_last([2, 3, 5, 7, 11, 13, 17, 19]))
+print(get_first_and_last([1, 3, 6, 10, 15, 21, 28, 36]))

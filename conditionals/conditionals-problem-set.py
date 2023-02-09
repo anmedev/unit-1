@@ -37,3 +37,37 @@ elif traffic_light_color == "yellow":
     print("reduce speed by half and check traffic_light_color again")
 else:
     print("prepare to reduce speed")
+
+# Conditionals Problem Set - id: 41ac7ae8-8b94-4305-8b05-40e0855fc00f
+# Online-retailers often provide free shipping to members if their cart total reaches at least $100. Select the option that describes the logic to determine if a customer will receive free shipping or not.
+if is_account_member and cart >= 100:
+    print("You are qualified for free shipping. Proceed to checkout.")
+elif is_account_member is False and cart >= 100:
+    print("Sign up today for free shipping on your next order.")
+else:
+    print("Save on shipping by becoming a member and spending $100 on your order. Offer ends soon!")
+
+# Conditionals Problem Set - id: 744730ac-4364-42c7-84db-5d2951d08af2
+# Imagine you are a game developer for a new Mario Kart game. You are developing the game mechanic to unlock stages. In order for the player to unlock Peach's Castle, Mario needs to reach a skill level of at least 10 and earn at least 8 stars from previous stages. Which option best describes the conditional to build this feature?
+if skill_level >= 10 and total_stars_count >= 8:
+    print("Peach's Castle is unlocked!")
+else:
+    print("Must reach level 10 and achieved 8 stars")
+
+# Conditionals Problem Set - id: 00216143-06ad-457e-b2aa-1d1dfd1e1a07
+# The Cinnamon Cinema always prices movie tickets based on age. There is a new promotion for additional discounts to reward individuals for pursuing an education. The discounted ticket prices per age are listed below.
+if customer_age < 0:
+    print("please enter a valid age.")
+elif customer_age <= 10:
+    ticket_price = 10.00
+elif customer_age <= 17:
+    ticket_price = 13.00
+elif customer_age < 60:
+    ticket_price = 15.00
+else:
+    ticket_price = 11.00
+
+# Conditionals Problem Set - id: a61f06a0-94aa-4617-89a2-86f1217c8ef4
+# Voice assistants like Alexa will turn on when any of its "wake words" is announced nearby. Which option best describes this behavior?
+if "alexa" in users_speech or "echo" in users_speech:
+  print("processing your request...")

@@ -77,7 +77,7 @@ print(get_first_and_last([1, 3, 6, 10, 15, 21, 28, 36]))
 
 # Sets and Tuples - id: 2a510580-ed13-4150-b591-0619d4b0ab74
 def store_product_of_pairs(product_table, first, last):
-  product_table[first, last] = first * last
+  product_table[(first, last)] = first * last
   return first * last
 print(store_product_of_pairs({}, 1, 21))
 print(store_product_of_pairs({}, 2, 16))

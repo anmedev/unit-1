@@ -66,14 +66,23 @@ print(is_known_sequence([2, 3, 5, 7, 11, 13, 17, 19], {
 }))
 
 # Sets and Tuples - id:  76b680cf-c278-44ca-bdda-146c3c3866ea
+fibonacci_sequence = [1, 1, 2, 3, 5, 8, 13, 21]
+positive_even_numbers = [2, 4, 6, 8, 10, 12, 14, 16]
+prime_numbers = [2, 3, 5, 7, 11, 13, 17, 19]
+triangular_numbers = [1, 3, 6, 10, 15, 21, 28, 36]
+
 def get_first_and_last(sequence):
   first = sequence[0]
   last = sequence[-1]
   return first, last
-print(get_first_and_last([1, 1, 2, 3, 5, 8, 13, 21]))
-print(get_first_and_last([2, 4, 6, 8, 10, 12, 14, 16]))
-print(get_first_and_last([2, 3, 5, 7, 11, 13, 17, 19]))
-print(get_first_and_last([1, 3, 6, 10, 15, 21, 28, 36]))
+first, last = get_first_and_last(fibonacci_sequence)
+print((first, last))
+first, last = get_first_and_last(positive_even_numbers)
+print((first, last))
+first, last = get_first_and_last(prime_numbers)
+print((first, last))
+first, last = get_first_and_last(triangular_numbers)
+print((first, last))
 
 # Sets and Tuples - id: 2a510580-ed13-4150-b591-0619d4b0ab74
 def store_product_of_pairs(product_table, first, last):

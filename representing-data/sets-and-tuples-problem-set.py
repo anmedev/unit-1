@@ -1,34 +1,42 @@
 # Sets and Tuples - id: 7dd15f30-291b-4d04-9560-b041c0718279
+bruschetta = ["bread", "olive oil", "garlic", "tomato", "basil", "balsamic vinegar", "salt"]
+pesto_pasta = ["pasta", "olive oil", "garlic", "basil", "parmesan", "pine nuts"]
+salsa = ["tomato", "onion", "garlic", "salt", "green onion", "cilantro", "jalapeno"]
 def shopping_list(bruschetta, pesto_pasta, salsa):
   bruschetta_set = set(bruschetta)
   pesto_pasta_set = set(pesto_pasta)
   salsa_set = set(salsa)
   final_set = bruschetta_set | pesto_pasta_set | salsa_set
   return list(final_set)
-print(shopping_list(["bread", "olive oil", "garlic", "tomato", "basil", "balsamic vinegar", "salt"], ["pasta", "olive oil", "garlic", "basil", "parmesan", "pine nuts"], ["tomato", "onion", "garlic", "salt", "green onion", "cilantro", "jalapeno"]))
-print(shopping_list([1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12]))
+print(shopping_list(bruschetta, pesto_pasta, salsa))
 
 # Sets and Tuples - id: 5e945f7a-fa92-423e-8b55-6a1dd2b22f87
+mady_bugs = ["lightning bug", "caterpillar", "ladybug", "lightning bug", "ladybug", "monarch butterfly", "june bug", "carpenter ant"]
+lesha_bugs = ["stag beetle", "earwig", "millipede", "pill bug", "june bug", "lightning bug", "dragonfly"]
 def make_insect_dex(bug_list):
   return set(bug_list)
-print(make_insect_dex(["lightning bug", "caterpillar", "ladybug", "lightning bug", "ladybug", "monarch butterfly", "june bug", "carpenter ant"]))
-print(make_insect_dex(["stag beetle", "earwig", "millipede", "pill bug", "june bug", "lightning bug", "dragonfly"]))
+print(make_insect_dex(mady_bugs))
+print(make_insect_dex(lesha_bugs))
 
 # Sets and Tuples - id: 1df7dc4e-7858-470b-83c5-7e619a31cb18
+mady_bugs = ["lightning bug", "caterpillar", "ladybug", "lightning bug", "ladybug", "monarch butterfly", "june bug", "carpenter ant"]
+lesha_bugs = ["stag beetle", "earwig", "millipede", "pill bug", "june bug", "lightning bug", "dragonfly"]
 def caught_only_by_first(first_list, second_list):
   first_list_set = set(first_list)
   second_list_set = set(second_list)
   return first_list_set - second_list_set
-print(caught_only_by_first(["lightning bug", "caterpillar", "ladybug", "lightning bug", "ladybug", "monarch butterfly", "june bug", "carpenter ant"], ["stag beetle", "earwig", "millipede", "pill bug", "june bug", "lightning bug", "dragonfly"]))
-print(caught_only_by_first(["stag beetle", "earwig", "millipede", "pill bug", "june bug", "lightning bug", "dragonfly"], ["lightning bug", "caterpillar", "ladybug", "lightning bug", "ladybug", "monarch butterfly", "june bug", "carpenter ant"]))
+print(caught_only_by_first(mady_bugs, lesha_bugs))
+print(caught_only_by_first(lesha_bugs, mady_bugs))
 
 # Sets and Tuples - id: e7a154a4-1f4d-4c2c-bb04-b88d978f3aba
+mady_bugs = ["lightning bug", "caterpillar", "ladybug", "lightning bug", "ladybug", "monarch butterfly", "june bug", "carpenter ant"]
+lesha_bugs = ["stag beetle", "earwig", "millipede", "pill bug", "june bug", "lightning bug", "dragonfly"]
 def caught_by_both(first_list, second_list):
   first_list_set = set(first_list)
   second_list_set = set(second_list)
   return first_list_set & second_list_set
-print(caught_by_both(["lightning bug", "caterpillar", "ladybug", "lightning bug", "ladybug", "monarch butterfly", "june bug", "carpenter ant"], ["stag beetle", "earwig", "millipede", "pill bug", "june bug", "lightning bug", "dragonfly"]))
-print(caught_by_both(["stag beetle", "earwig", "millipede", "pill bug", "june bug", "lightning bug", "dragonfly"], ["lightning bug", "caterpillar", "ladybug", "lightning bug", "ladybug", "monarch butterfly", "june bug", "carpenter ant"]))
+print(caught_by_both(mady_bugs, lesha_bugs))
+print(caught_by_both(lesha_bugs, mady_bugs))
 
 # Sets and Tuples - id: c43f2ad4-b5b4-428b-8899-438decd86d2f
 def caught_together(first_list, second_list):

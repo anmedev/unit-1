@@ -188,9 +188,9 @@ def calculate(num_a, num_b, operator):
 # Intro to Pytest - id: VarpJ0
 # Write a function to make the test pass. Use the information from the test to help determine what needs to be in the function body.
 
-# def test_returns_true():
-#     result = func_that_always_returns_true()
-#     assert result
+def test_returns_true():
+    result = func_that_always_returns_true()
+    assert result
 
 # Answer:
 def func_that_always_returns_true():

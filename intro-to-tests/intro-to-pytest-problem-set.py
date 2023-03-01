@@ -2,6 +2,14 @@
 # Complete Part 1 outlined in the README of the tdd-exercise replit. Record your test cases below.
 
 # Answer:
+# Nominal Test Cases:
+# 1. 
+# 2.
+
+# Edge Test Cases:
+# 1. What happens if our hand has less than 2 or more than 5 items in it?
+# 2. What happens if we have a negative number card?
+# 3. What happens if we input a non numeric value?
 
 # Intro to Pytest - id: oLlaji
 # We want to test calculate() and verify that when either num_a or num_b aren't integers or floats, the function returns "Type Error: num_a and num_b must be integer or float". Which of these is the best name for a test?

@@ -1,8 +1,8 @@
 # Part 3
 # Tests
-#@pytest.mark.skip(reason="no way of currently testing this")
 from main import blackjack_score
 import pytest
+#@pytest.mark.skip(reason="no way of currently testing this")
 def test_score_for_pair_of_number_cards():
   # Arrange
   hand = [3, 4]
@@ -14,7 +14,17 @@ def test_score_for_pair_of_number_cards():
 # @pytest.mark.skip(reason="no way of currently testing this")
 def test_facecards_have_values_calculated_correctly():
   # Arrange
-  hand = []
+  first_hand = ["Jack", 2]
+  second_hand = ["Queen", "Ace"]
+  third_hand = ["King", 5, "Ace"]
+  # Act
+  score = blackjack_score(first_hand)
+  score = blackjack_score(second_hand)
+  score = blackjack_score(third_hand)
+  # Assert
+  assert score == 12
+  assert score == 21
+  assert score == 16
 
 
 # @pytest.mark.skip(reason="no way of currently testing this")

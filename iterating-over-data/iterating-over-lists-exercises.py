@@ -38,9 +38,9 @@ print("That sure was a meal!")
 
 # 1b. What is each element? Each element represents the meal prices that we will be calculating taxes for.
 
-# 1c. What do we name each element? 
+# 1c. What do we name each element? We name each element price
 
-# 1d. How do we use each element in the loop? 
+# 1d. How do we use each element in the loop? By iterating through each element and multiplying each element by 1.101, which is the tax amount. Each product will be stored in the taxed_price variable. The print statement will print the string and the new taxed price.
 
 # 2. Predict what will print
 

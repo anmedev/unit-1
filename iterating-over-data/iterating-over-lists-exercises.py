@@ -81,3 +81,16 @@ print(taxed_prices)
 
 # 3. accessed or modified after the for loop? How?
 # It is accessed after the for loop by the print statement, which is using to print the final taxed_prices list after the loop is completed.
+
+# Loop Review - id: e45acb1f-5be4-4f87-b6d2-60831f03d620
+# Consider this code -- what does the variable language represent?
+
+def display_most_spoken_languages():
+    languages = ["Chinese", "Hindi", "English", "Spanish", "Arabic"]
+
+    for language in languages:
+        print(f"{language} is one of the top 5 most spoken languages in the world.")
+
+    return languages
+
+# Answer: A single element in the languages list. The value changes during iteration.

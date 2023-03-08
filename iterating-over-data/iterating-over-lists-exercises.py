@@ -40,7 +40,8 @@ print("That sure was a meal!")
 
 # 1c. What do we name each element? We name each element price
 
-# 1d. How do we use each element in the loop? By iterating through each element and multiplying each element by 1.101, which is the tax amount. Each product will be stored in the taxed_price variable. The print statement will print the string and the new taxed price for each element. After the loop is complete, the print statement outside of the loop will print.
+# 1d. How do we use each element in the loop?
+# By iterating through each element and multiplying each element by 1.101, which is the tax amount. Each product will be stored in the taxed_price variable. The print statement will print the string and the new taxed price for each element. After the loop is complete, the print statement outside of the loop will print.
 
 # 2. Predict what will print
 # The cost of one item is 20.90799
@@ -63,6 +64,11 @@ print(taxed_prices)
 
 # Is taxed_prices:
 
-# 1. initialized as an empty array inside the for loop? Why or why not? 
+# 1. initialized as an empty array inside the for loop? Why or why not?
+# It's initialized as an empty array outside the for loop. If it's done inside the loop, the taxed_prices array will update the replace the tax price for each element as the loop runs. When the final list is printed, instead of printing the tax price for each element, it will only print the tax price for the final element.
+
 # 2. accessed or modified inside the for loop? How?
+# It is modified inside the for loop by using the append function to add the updated tax price for each element to the tax_prices list.
+
 # 3. accessed or modified after the for loop? How?
+# It is accessed after the for loop by the print statement, which is using to print the final taxed_prices list after the loop is completed.

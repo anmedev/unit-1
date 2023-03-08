@@ -34,9 +34,9 @@ for price in prices:
 print("That sure was a meal!")
 
 # Read through the code and identify:
-# 1a. What is the list? 
+# 1a. What is the list? The list is called prices.
 
-# 1b. What is each element? 
+# 1b. What is each element? Each element represents the meal prices that we will be calculating taxes for.
 
 # 1c. What do we name each element? 
 

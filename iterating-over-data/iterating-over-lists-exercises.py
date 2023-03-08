@@ -50,3 +50,19 @@ print("That sure was a meal!")
 # That sure was a meal!
 
 # 3. Run the code and check your prediction -- My prediction is correct.
+
+# Building up a List of Results - Exercise
+prices = [18.99, 56.00, 48.50, 18.50]
+taxed_prices = []
+
+for price in prices:
+    taxed_price = price * 1.101
+    taxed_prices.append(taxed_price)
+
+print(taxed_prices)
+
+# Is taxed_prices:
+
+# 1. initialized as an empty array inside the for loop? Why or why not? 
+# 2. accessed or modified inside the for loop? How?
+# 3. accessed or modified after the for loop? How?

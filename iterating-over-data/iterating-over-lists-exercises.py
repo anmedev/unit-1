@@ -40,9 +40,13 @@ print("That sure was a meal!")
 
 # 1c. What do we name each element? We name each element price
 
-# 1d. How do we use each element in the loop? By iterating through each element and multiplying each element by 1.101, which is the tax amount. Each product will be stored in the taxed_price variable. The print statement will print the string and the new taxed price.
+# 1d. How do we use each element in the loop? By iterating through each element and multiplying each element by 1.101, which is the tax amount. Each product will be stored in the taxed_price variable. The print statement will print the string and the new taxed price for each element. After the loop is complete, the print statement outside of the loop will print.
 
 # 2. Predict what will print
+# The cost of one item is 20.90799
+# The cost of one item is 61.656
+# The cost of one item is 53.3985
+# The cost of one item is 20.3685
+# That sure was a meal!
 
-
-# 3. Run the code and check your prediction
+# 3. Run the code and check your prediction -- My prediction is correct.

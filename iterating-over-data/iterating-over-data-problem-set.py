@@ -108,5 +108,3 @@ print(find_adults({"Jane": 23, "Mateo": 2, "Eduardo": 18, "Elsa": 1, "Alba": 66}
 print(find_adults({"Mateo": 2, "Eduardo": 18, "Elsa": 1})) # ['Eduardo']
 print(find_adults({"Mateo": 2, "Elsa": 1})) # []
 print(find_adults({})) # []
-
-

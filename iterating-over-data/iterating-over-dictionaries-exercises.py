@@ -61,3 +61,30 @@ print("That sure was a meal!")
 
 # 3. Run the code and check your prediction
 # My prediction is correct.
+
+# Iteration Practice 1 - id: 6c3bc24e-e25e-4d85-8e8e-868cb4baa41f
+# Which option will print the keys of this menu dictionary?
+
+drink_menu = {
+    "hot": "coffee",
+    "cold": "iced tea"
+}
+
+# Answer:
+for drink_type in drink_menu.keys():
+  print(drink_type)
+
+# Iteration Practice 2 - id: c5a6748a-ad7e-4f50-93d4-f8d72e9f0f2a
+# Which option will print the values of this menu dictionary?
+
+dessert_menu = {
+    "ice cream": "Vanilla Bean",
+    "cake": "Chocolate Lava Cake",
+    "pie": "Apple Pie"
+}
+
+# Answer:
+for dessert in dessert_menu.values():
+  print(dessert)
+for category, dessert in dessert_menu.items():
+  print(dessert)

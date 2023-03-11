@@ -58,3 +58,47 @@ while counter < 5:
 # Answer:
 for counter in range(5):
     print(counter)
+
+# While Loops - id: c90cd73b-bb1d-4f6c-9027-c9db928c199e
+# Which of the for loops below is equivalent to this while loop?
+counter = 4
+while counter >= 0:
+    print(counter)
+    counter -= 1
+
+# Answer:
+for counter in range(4, -1, -1):
+  print(counter)
+
+# While Loops - id: 74aac94d-ae5d-40f3-ba50-b8e4c0c2d255
+# Which of the for loops below is equivalent to this while loop?
+counter = 0
+cats = ['Grumpy Cat', 'Garfield', 'Lil Bub', 'Maru', 'Keyboard Cat', 'Hello Kitty']
+while counter < len(cats):
+    print(cats[counter])
+    counter += 1
+
+# Answer:
+cats = ['Grumpy Cat', 'Garfield', 'Lil Bub', 'Maru', 'Keyboard Cat', 'Hello Kitty']
+for cat in cats:
+  print(cat)
+
+# While Loops - id: 879e5790-de4c-4a51-ac38-0330ffb98a67
+# Reorder the lines of code below to produce a while loop that runs forever with the following behavior:
+
+# - Prompt the user for input.
+# - Ignore the input if the user enters 'skip.'
+# - End the loop if the user enters 'done.'
+# - Otherwise, print a message telling the user what they input.
+
+# Assume that each line would be indented correctly.
+
+# Answer:
+# while True:
+#   user_input = input('enter input: ')
+#   if user_input == 'done':
+#     break
+#   elif user_input == 'skip':
+#     continue
+#   print(f'you entered {user_input}')
+

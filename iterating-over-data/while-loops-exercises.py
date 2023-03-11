@@ -40,16 +40,13 @@ while i < 5:
 
 import random
 
-
 def check_if_treasure(item):
     is_treasure = random.randrange(100) < 25
     # The line below uses the ternary operator.
     return "Treasure!" if is_treasure else item + 1
 
-
 def look_for_treasure():
     i = 0
-
     while True:
         if i == "Treasure!":
             print("We found treasure instead of a number!")

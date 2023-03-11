@@ -34,3 +34,49 @@ while i < 5:
     i += 1
 
 # Answer: Loop Table Durian -- see exercise for loop table option
+
+# While Loops - id: SLx1UM
+# The function look_for_treasure has an error in it! look_for_treasure should exit after we find treasure. Add in the break keyword in the right location so the test passes.
+
+import random
+
+
+def check_if_treasure(item):
+    is_treasure = random.randrange(100) < 25
+    # The line below uses the ternary operator.
+    return "Treasure!" if is_treasure else item + 1
+
+
+def look_for_treasure():
+    i = 0
+
+    while True:
+        if i == "Treasure!":
+            print("We found treasure instead of a number!")
+            print("Let's leave while we can.")
+        print(f"Counting: i is {i}")
+        i = check_if_treasure(i)
+
+    print("I broke out of the loop!")
+    return "I'm free!"
+
+# Answer:
+import random
+
+def check_if_treasure(item):
+  is_treasure = random.randrange(100) < 25 # This will evaluate to True or False.
+    # The line below uses the ternary operator.
+  return "Treasure!" if is_treasure else item + 1
+
+def look_for_treasure():
+  i = 0
+  while True:
+    if i == "Treasure!":
+      print("We found treasure instead of a number!")
+      print("Let's leave while we can.")
+      break
+    print(f"Counting: i is {i}")
+    i = check_if_treasure(i)
+  print("I broke out of the loop!")
+  return "I'm free!"
+print(look_for_treasure())

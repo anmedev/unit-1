@@ -102,3 +102,11 @@ for cat in cats:
 #     continue
 #   print(f'you entered {user_input}')
 
+# While Loops - id: f44b4f27-82e7-4545-a4d0-766e307971b1
+# Let's compare while loops and for loops. Which of the following situations are handled more appropriately with a while loop, compared to a for loop?
+
+# Answer:
+# Looping until a condition changes
+# Performing an action an indeterminate number of times
+# Iterating over the values in a list or dictionary in an arbitrary order
+# Looping until a user enters certain data

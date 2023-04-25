@@ -18,3 +18,41 @@ sandwich = {
 }
 
 # Answer: This data structure is a dictionary of lists. It has an outer dictionary called sandwiches and inside this sandwiches dictionary, are three inner lists. These lists are called "blt", "grilled cheese", and "pbj" respectively and they have varying list lengths.
+
+# Nested Lists and Dictionaries - id: gKsPNt
+# What is the syntax to get 25 from pokedex?
+pokedex = [
+        {
+            "id": 25,
+            "name_en": "Pikachu",
+            "type": "Electric"
+        }
+    ]
+
+# Answer: pokedex[0]["id"]
+
+# Nested Lists and Dictionaries - id: yqGKmA
+pokedex = [
+        {
+            "id": 25,
+            "name_en": "Pikachu",
+            "type": "Electric"
+        }
+    ]
+
+# Answer: pokedex[0]["type"]
+
+# Nested Lists and Dictionaries - id: wfpvr0
+# Let's practice with a nested data structure that is three layers deep! What is the syntax to get "Pikachu" from game_data?
+
+game_data = {
+    "pokedex": [
+        {
+            "id": 25,
+            "name_en": "Pikachu",
+            "type": "Electric"
+        }
+    ]
+}
+# Answer: game_data["pokedex"][0]["name_en"]
+

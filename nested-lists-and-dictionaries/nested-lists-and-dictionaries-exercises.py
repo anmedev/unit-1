@@ -56,3 +56,31 @@ game_data = {
 }
 # Answer: game_data["pokedex"][0]["name_en"]
 
+# Nested Lists and Dictionaries - id:  1gcwNk
+# What is the syntax to get [{"id": 25, "name_en": "Pikachu", "type": "Electric"}] from game_data?
+
+game_data = {
+    "pokedex": [
+        {
+            "id": 25,
+            "name_en": "Pikachu",
+            "type": "Electric"
+        }
+    ]
+}
+
+# Answer: game_data["pokedex"]
+
+# Nested Lists and Dictionaries - id: mXiwq8
+# What is the syntax to get {"id": 25, "name_en": "Pikachu", "type": "Electric"} from game_data?
+
+game_data = {
+    "pokedex": [
+        {
+            "id": 25,
+            "name_en": "Pikachu",
+            "type": "Electric"
+        }
+    ]
+}
+# Answer: game_data[pokedex][0]

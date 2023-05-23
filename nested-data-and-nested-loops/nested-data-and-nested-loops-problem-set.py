@@ -116,7 +116,25 @@ schools = {
 # Nested Data and Nested Loops - id: b54addb3-48b0-462a-9f6a-f9b749fba39f
 # Implement get_school_names(). This method takes in one parameter, schools. The method should return a list of school names, which are strings.
 
+schools = {
+    "school 1": {
+        "name": "Western Washington University",
+        "city": "Bellingham"
+    },
+    "school 2": {
+        "name": "University of Washington",
+        "city": "Seattle"
+    },
+    "school 3": {
+        "name": "Washington State University",
+        "city": "Pullman"
+    }
+}
+# Solution
 def get_school_names(schools):
+  school_names = [schools[school]["name"] for school in schools]
+  return school_names
+print(get_school_names(schools))
 
 # Nested Data and Nested Loops - id: Q9vx6M
 # It's karaoke night! What is the syntax to get "Jolene" from karaoke_queue?

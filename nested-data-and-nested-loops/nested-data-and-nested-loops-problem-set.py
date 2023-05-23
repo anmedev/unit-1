@@ -136,6 +136,20 @@ def get_school_names(schools):
   return school_names
 print(get_school_names(schools))
 
+# Ada's First Solution:
+# def get_school_names(schools):
+#     names = []
+#     for school_num in schools:
+#         names.append(schools[school_num]["name"])
+#     return names
+
+# Ada's Second Solution:
+# def get_school_names(schools):
+#     names = []
+#     for school_num, school in schools.items():
+#         names.append(school["name"])
+#     return names
+
 # Nested Data and Nested Loops - id: Q9vx6M
 # It's karaoke night! What is the syntax to get "Jolene" from karaoke_queue?
 karaoke_queue = {
@@ -144,3 +158,28 @@ karaoke_queue = {
   "Linh": ["Say My Name", "Since You Been Gone"]
 }
 # Answer: karaoke_queue["Rajan"][1]
+
+# Nested Data and Nested Loops - id: 1VNr86
+# It's karaoke night! Implement get_song_list(). This method takes in one parameter, karaoke_queue. The method should return a list of song titles, which are strings.
+
+karaoke_queue = {
+  "Rajan": ["I Want It That Way", "Jolene"],
+  "Akira": ["Return of the Mack", "Mr. Brightside"],
+  "Linh": ["Say My Name", "Since You Been Gone"]
+}
+# Solution:
+def get_song_list(karaoke_queue):
+    song_titles = []
+    for song_list in karaoke_queue.values():
+        for song in song_list:
+            song_titles.append(song)
+    return song_titles
+print(get_song_list(karaoke_queue))
+
+# Ada's Solution:
+def get_song_list(karaoke_queue):
+    song_list = []
+    for performer, performer_queue in karaoke_queue.items():
+        for song in performer_queue:
+            song_list.append(song)
+    return song_list

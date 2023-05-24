@@ -21,5 +21,3 @@
 # Moira needs the inner for loop to iterate over each of the elements in each of the inner loops. She also needs the vertical position and horizontal position of each of the cells so that she can use those to call count_neighbors for each cell. How can Moira change her code to fix this bug?
 
 # Answer: To fix this code, I changed the inner for loop from for h_pos in range(len(v_pos)) to for h_pos in range(len(stage[v_pos])) so that I could iterate over the elements in the inner loops.
-
-# * Note: stage[h_pos] represents the outer list, which evaluates to [False, False, False] since there are three inner lists inside the outer list.

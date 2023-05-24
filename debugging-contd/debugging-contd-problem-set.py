@@ -15,4 +15,11 @@
 # Before Moira can fix her nested loop, she needs to make sure that she understands the data structure that she's looping over. Read through the provided functions and use debugging tools like print statements to investigate the stage variable that she is working with.
 
 # What is stage?
-# Answer: Stage is a list of lists. The lists of lists read as: [[False, True, False], [False, True, False], [False, True, False]]. False represents where the cell dies and True represents where the cell lives.
+# Answer: Stage is a list of lists. The lists of lists evaluates to: [[False, True, False], [False, True, False], [False, True, False]]. False represents where the cell dies and True represents where the cell lives.
+
+# Debugging Continued - id: 42cc6a3a-e111-4344-ba03-bc4b2730c0d3
+# Moira needs the inner for loop to iterate over each of the elements in each of the inner loops. She also needs the vertical position and horizontal position of each of the cells so that she can use those to call count_neighbors for each cell. How can Moira change her code to fix this bug?
+
+# Answer: To fix this code, I changed the inner for loop from for h_pos in range(len(v_pos)) to for h_pos in range(len(stage[v_pos])) so that I could iterate over the elements in the inner loops.
+
+# * Note: stage[h_pos] represents the outer list, which evaluates to [False, False, False] since there are three inner lists inside the outer list.

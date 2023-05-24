@@ -1,5 +1,6 @@
 # Nested Data and Nested Loops - id: 8mavqk
 # What is the syntax to get "6501 Island St. SE" from restaurants?
+
 restaurants = [
     {
         "name": "Dough Zone",
@@ -39,6 +40,7 @@ restaurants = [
         "address": "12543 Sushi Way NE"
     }
 ]
+
 # Refactored Solution
 def get_restaurant_addresses(restaurants):
     address_list = [restaurant["address"] for restaurant in restaurants]
@@ -80,6 +82,7 @@ student_groups = [
     ["Luke", "Leia", "Han"],
     ["Gordon", "Lizzie", "Miranda"]
 ]
+
 # Solution
 def get_student_names(student_groups):
   student_names = [student for group in student_groups for student in group]
@@ -130,6 +133,7 @@ schools = {
         "city": "Pullman"
     }
 }
+
 # Solution
 def get_school_names(schools):
   school_names = [schools[school]["name"] for school in schools]
@@ -152,6 +156,7 @@ print(get_school_names(schools))
 
 # Nested Data and Nested Loops - id: Q9vx6M
 # It's karaoke night! What is the syntax to get "Jolene" from karaoke_queue?
+
 karaoke_queue = {
   "Rajan": ["I Want It That Way", "Jolene"],
   "Akira": ["Return of the Mack", "Mr. Brightside"],
@@ -167,19 +172,20 @@ karaoke_queue = {
   "Akira": ["Return of the Mack", "Mr. Brightside"],
   "Linh": ["Say My Name", "Since You Been Gone"]
 }
+
 # Solution:
 def get_song_list(karaoke_queue):
-    song_titles = []
-    for song_list in karaoke_queue.values():
-        for song in song_list:
-            song_titles.append(song)
-    return song_titles
+    song_list = []
+    for song_titles in karaoke_queue.values():
+        for song in song_titles:
+            song_list.append(song)
+    return song_list
 print(get_song_list(karaoke_queue))
 
 # Ada's Solution:
-def get_song_list(karaoke_queue):
-    song_list = []
-    for performer, performer_queue in karaoke_queue.items():
-        for song in performer_queue:
-            song_list.append(song)
-    return song_list
+# def get_song_list(karaoke_queue):
+#     song_list = []
+#     for performer, performer_queue in karaoke_queue.items():
+#         for song in performer_queue:
+#             song_list.append(song)
+#     return song_list

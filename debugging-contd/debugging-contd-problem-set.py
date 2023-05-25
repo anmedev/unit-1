@@ -21,3 +21,7 @@
 # Moira needs the inner for loop to iterate over each of the elements in each of the inner loops. She also needs the vertical position and horizontal position of each of the cells so that she can use those to call count_neighbors for each cell. How can Moira change her code to fix this bug?
 
 # Answer: To fix this code, I changed the inner for loop from for h_pos in range(len(v_pos)) to for h_pos in range(len(stage[v_pos])) so that I could iterate over the elements in the inner loops.
+
+# Debugging Continued - id: 2404607e-9db0-48bd-9222-61a58913ffb4
+# Moira's code produces this output: [SCREENSHOT OF ERROR]. What is the bug that Moira sees now? What is the expected output? What is the code doing?
+# Answer: The bug in the code is causing every cell to evaluate to False, which means there are no living cells. The code is setting every cell in the stage are evaluating to False.

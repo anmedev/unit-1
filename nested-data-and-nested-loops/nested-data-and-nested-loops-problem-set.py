@@ -173,14 +173,20 @@ karaoke_queue = {
   "Linh": ["Say My Name", "Since You Been Gone"]
 }
 
-# Solution:
+# Refactored Solution:
 def get_song_list(karaoke_queue):
-    song_list = []
-    for song_titles in karaoke_queue.values():
-        for song in song_titles:
-            song_list.append(song)
-    return song_list
+  song_list = [song for song_titles in karaoke_queue.values() for song in song_titles]
+  return song_list
 print(get_song_list(karaoke_queue))
+
+# Original Solution:
+# def get_song_list(karaoke_queue):
+#     song_list = []
+#     for song_titles in karaoke_queue.values():
+#         for song in song_titles:
+#             song_list.append(song)
+#     return song_list
+# print(get_song_list(karaoke_queue))
 
 # Ada's Solution:
 # def get_song_list(karaoke_queue):
